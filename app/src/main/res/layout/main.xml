@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.irvingsanchez.ecobici.MapsActivity" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNavegar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment"
+        android:layout_alignRight="@+id/fragment"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:onClick="navegarWaze"
+        map:backgroundTint="@color/azulWaze"
+        map:fabSize="normal"
+        map:srcCompat="@drawable/ic_navigation_24dp" />
+
+</RelativeLayout>
