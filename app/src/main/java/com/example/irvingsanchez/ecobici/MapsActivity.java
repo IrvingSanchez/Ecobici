@@ -4,19 +4,22 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.view.View;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 
@@ -153,7 +156,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return stream;
         }
 
-        //  Cuando la peticicion fue exitosa se ejecuta este metodo
+        //  Cuando la peticion fue exitosa se ejecuta este metodo
         //  pasando como parametro la respuesta del servidor
         @Override
         protected void onPostExecute(String s) {
